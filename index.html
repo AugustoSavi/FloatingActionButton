@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Floating Action Button</title>
+</head>
+<body>
+    <div class="action" onclick="actionToggle()">
+        <span>+</span>
+        <ul>
+            <li><img src="./assets/facebook.png" alt="">Share on Facebook</li>
+            <li><img src="./assets/instagram.png" alt="">Share on Instagram</li>
+            <li><img src="./assets/linkedin.png" alt="">Share on Linkedin</li>
+            <li><img src="./assets/twitter.png" alt="">Share on twitter</li>
+            <li><img src="./assets/whatsapp.png" alt="">Share on Whatsapp</li>
+        </ul>
+    </div>
+    <script>
+        function actionToggle() {
+            const action = document.querySelector('.action');
+            action.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
